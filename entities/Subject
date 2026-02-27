@@ -1,0 +1,41 @@
+{
+  "name": "Subject",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Subject name"
+    },
+    "description": {
+      "type": "string"
+    },
+    "learner_level": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "weak",
+        "moderate",
+        "advanced"
+      ],
+      "default": "not_assessed"
+    },
+    "diagnostic_score": {
+      "type": "number"
+    },
+    "color": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "study_hours_per_week": {
+      "type": "number"
+    },
+    "owner_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
