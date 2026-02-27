@@ -1,0 +1,48 @@
+{
+  "name": "StudyRoom",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "host_id": {
+      "type": "string"
+    },
+    "host_name": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "member_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true
+    },
+    "invite_code": {
+      "type": "string"
+    },
+    "max_members": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "required": [
+    "name",
+    "host_id"
+  ]
+}
